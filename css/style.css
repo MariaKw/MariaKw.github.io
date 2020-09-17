@@ -103,6 +103,7 @@ section:hover {
 /*Секция Мои навыки*/
 .wrap-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 /*Секция Опыт работы*/
