@@ -27,9 +27,6 @@ body {
   border-bottom: solid 2px #212122;
   margin-top: 10px;
 }
-.anchor {
-  padding-top: 90px;
-}
 
 /*Хедер и футер*/
 .page-header, .page-footer {
@@ -95,6 +92,8 @@ section:hover {
   border: 2px solid #212122;
   border-radius: 10px;
   box-shadow: #454546;
+  max-width: 200px;
+  max-height: 200px;
 }
 .about-me {
   margin: 0 20px;
@@ -104,6 +103,7 @@ section:hover {
 .wrap-flex {
   display: flex;
   flex-wrap: wrap;
+  min-width: 100px;
 }
 
 /*Секция Опыт работы*/
