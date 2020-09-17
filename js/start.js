@@ -5,7 +5,7 @@ let btnClose = popup.querySelector('#close-popup');
 let btnOpen = document.querySelector('#call-me-btn');
 
 let hidePopup = function () {
-    popup.classList.add('invisible');
+    popup.classList.add('hidden');
 };
 let openPopup = function () {
     popup.classList.remove('hidden');
