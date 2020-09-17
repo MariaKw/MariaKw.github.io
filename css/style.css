@@ -1,0 +1,287 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #212122;
+  background-color: #f9f9f9;
+  text-align:center;
+  margin: 0 auto;
+  padding: 0;
+}
+.page-header ul, .page-footer ul {
+  margin: 0;
+  padding: 0;
+}
+.nav-above ul li, .my-links ul li, .page-footer ul li,
+.my-contacts ul li {
+  list-style-type: none;
+  margin: 0 5px;
+}
+.heading2:not(.first) {
+  border-bottom: solid 2px #212122;
+  margin-top: 10px;
+}
+.anchor {
+  padding-top: 90px;
+}
+
+/*Хедер и футер*/
+.page-header, .page-footer {
+  color: #f9f9f9;
+  background-color: #212122;
+  font-size: 25px;
+  padding: 0 15px;
+}
+.page-header .nav-above ul,
+.page-footer .link-icons ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.page-header .mobile-number, .nav-above ul li, .page-header .link-icons,
+.page-footer .made-by, .link-icons ul li {
+  padding: 10px;
+  margin: 0;
+}
+
+/*Хэдер*/
+.page-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-family: 'Anonymous Pro', monospace;
+  /*position: fixed;
+  top: 0;
+  width: 100%;*/
+}
+.nav-above ul li:hover {
+  background-color: #454546;
+  border-radius: 35px;
+}
+
+/*Основные секции в теле*/
+.main-wrapper {
+  background-color: #ebebee;
+  border: 1px solid #dfdfe2;
+  margin: 10px auto;
+  padding: 20px;
+  text-align:left;
+  max-width:960px;
+}
+section {
+  border: 1px dotted #7c7c80;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+section:hover {
+  background-color: #d7d7da;
+}
+
+/*Секция Обо мне*/
+.general {
+  display: flex;
+}
+.my-foto {
+  border: 2px solid #212122;
+  border-radius: 10px;
+  box-shadow: #454546;
+}
+.about-me {
+  margin: 0 20px;
+}
+
+/*Секция Мои навыки*/
+.wrap-flex {
+  display: flex;
+}
+
+/*Секция Опыт работы*/
+table {
+  margin-top: 10px;
+}
+table, th, td {
+  border: 1px solid #212122;
+  border-spacing: 0px 0px;
+}
+td, th {
+  padding: 3px 8px;
+}
+td ul {
+  margin: 0;
+  padding: 0 8px 0 15px;
+  font-size: 15px;
+}
+
+/*Секция Контакты*/
+.my-contacts ul {
+  padding: 0;
+  margin: 0;
+}
+.my-contacts ul li {
+  font-size: 22px;
+  margin: 15px 0;
+  border-radius: 7px;
+}
+.my-contacts ul li:hover {
+  background-color: #ebebee;
+}
+.my-contacts ul:first-child {
+  margin-top: 0;
+}
+.my-contacts h2 {
+  margin-bottom: 0;
+}
+
+.call-me-btn {
+  font-size: 22px;
+  font-weight: 700;
+  background-color: #ebebee;
+  color: #212122;
+  border: 5px solid #000000;
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: 50px;
+}
+.call-me-btn:hover {
+  background-color: #ceced4;
+}
+
+/*Попап Перезвоните мне*/
+.hidden {
+  display: none;
+}
+.popup-call-me {
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 200px;
+  padding: 10px 25px;
+  background-color: #212122;
+  color: #f9f9f9;
+  border: 5px inset #ffffff;
+  border-radius: 15px;
+  font-size: 20px;
+  margin: 40px auto;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  bottom: 300px;
+}
+.popup-call-me .modal-close {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px;
+  top: 5px;
+  right: 5px;
+}
+.popup-call-me .modal-action {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  padding: 7px;
+  border: 2px solid #09040d;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: inherit;
+}
+.popup-call-me input, .popup-call-me textarea {
+  font-family: inherit;
+  font-size: 18px;
+  padding: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.call-me-p .call-me-btn {
+  cursor: pointer;
+}
+
+/*Футер доп*/
+.made-by {
+  font-size: 14px;
+  text-align: right;
+}
+.made-by a {
+  font-size: 20px;
+  font-weight: 700;
+  color: #8f8f8f;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 25px;
+}
+.made-by a:hover {
+  color: #ffffff;
+}
+.page-footer .link-icons {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*ССЫЛКИ*/
+a, a:visited {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+.main-wrapper a, .main-wrapper a:visited {
+  color: #212122;
+}
+a.link-icons:hover,
+.link-icons li:hover {
+  background-color: #454546;
+  border-radius: 35px;
+}
+.link-icons p, .link-icons div {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  align-content: center;
+}
+.white-icon{
+  filter: invert(1);
+}
+.sm-icon {
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  background-size: 23px 23px;
+  text-indent: -100000px;
+  margin: 5px;
+}
+.page-footer .sm-icon {
+  width: 43px;
+  height: 43px;
+  background-size: 43px 43px;
+  margin: 0;
+}
+.sm-icon.mobile-number {
+  background-image: url(../icons/icon-phone.png);
+}
+.sm-icon.email {
+  background-image: url(../icons/icon-mail.png);
+}
+.sm-icon.github {
+  background-image: url(../icons/icon-git.png);
+}
+
+summary {
+  border-bottom: solid 2px #212122;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 10px;
+  cursor: pointer;
+}
