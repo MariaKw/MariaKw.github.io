@@ -27,6 +27,9 @@ body {
   border-bottom: solid 2px #212122;
   margin-top: 10px;
 }
+.anchor {
+  padding-top: 90px;
+}
 
 /*Хедер и футер*/
 .page-header, .page-footer {
@@ -103,11 +106,12 @@ section:hover {
 .wrap-flex {
   display: flex;
   flex-wrap: wrap;
-  min-width: 100px;
+  min-width: 500px;
 }
 
 /*Секция Опыт работы*/
 table {
+  width: 100%;
   margin-top: 10px;
 }
 table, th, td {
@@ -121,6 +125,30 @@ td ul {
   margin: 0;
   padding: 0 8px 0 15px;
   font-size: 15px;
+}
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (max-width: 720px) {
+  .container table thead {
+    display: none;
+  }
+  .container table tr {
+    display: block;
+  }
+  .container table td {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .container table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 20px;
+  }
 }
 
 /*Секция Контакты*/
@@ -158,9 +186,6 @@ td ul {
 }
 
 /*Попап Перезвоните мне*/
-.hidden {
-  display: none;
-}
 .popup-call-me {
   min-width: 300px;
   max-width: 400px;
@@ -176,6 +201,9 @@ td ul {
   z-index: 9999;
   top: 0;
   bottom: 30%;
+}
+.hidden {
+  display: none;
 }
 .popup-call-me .modal-close {
   display: block;
