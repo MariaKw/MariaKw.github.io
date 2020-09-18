@@ -189,7 +189,7 @@ td ul {
   color: #f9f9f9;
   border: 5px inset #ffffff;
   border-radius: 15px;
-  font-size: 20px;
+  min-font-size: 20px;
   margin: 40px auto;
   position: sticky;
   z-index: 9999;
@@ -231,11 +231,11 @@ td ul {
 
 /*Футер доп*/
 .made-by {
-  font-size: 14px;
+  min-font-size: 14px;
   text-align: right;
 }
 .made-by a {
-  font-size: 20px;
+  min-font-size: 20px;
   font-weight: 700;
   color: #8f8f8f;
   display: inline-block;
