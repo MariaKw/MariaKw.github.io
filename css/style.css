@@ -93,7 +93,7 @@ section:hover {
   border-radius: 10px;
   box-shadow: #454546;
   min-width: 200px;
-  min-height: 200px;
+  object-fit:cover;
 }
 .about-me {
   margin: 0 20px;
