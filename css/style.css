@@ -175,7 +175,7 @@ td ul {
   position: sticky;
   z-index: 9999;
   top: 0;
-  bottom: 300px;
+  bottom: 30%;
 }
 .popup-call-me .modal-close {
   display: block;
