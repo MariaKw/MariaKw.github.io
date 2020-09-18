@@ -23,13 +23,6 @@ body {
   list-style-type: none;
   margin: 0 5px;
 }
-.heading2:not(.first) {
-  border-bottom: solid 2px #212122;
-  margin-top: 10px;
-}
-.anchor {
-  padding-top: 90px;
-}
 
 /*Хедер и футер*/
 .page-header, .page-footer {
@@ -187,6 +180,7 @@ td ul {
 
 /*Попап Перезвоните мне*/
 .popup-call-me {
+  text-align:left;
   min-width: 300px;
   max-width: 400px;
   min-height: 200px;
