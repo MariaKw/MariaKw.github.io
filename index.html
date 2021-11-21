@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_v2.css">
         <link rel="shortcut icon" href="icons/main.png" type="image/x-icon">
         <title>Аракелян Мария Валерьевна</title>
     </head>
@@ -20,10 +20,12 @@
                     <li><a href="#my-contacts">Контакты</a></li>
                 </ul>
             </nav>
-            <a class="link-icons" href="tel:+79023955543">
-                <div class="sm-icon mobile-number white-icon"></div>
-                <p>+7(902)395-55-43</p>
-            </a>
+            <div class="wrap-link-icons">
+                <a class="link-icons" href="tel:+79023955543">
+                    <div class="sm-icon mobile-number white-icon"></div>
+                    <div>+7(902)395-55-43</div>
+                </a>
+            </div>
         </header>
 
         <main class="main-wrapper">
@@ -41,23 +43,32 @@
             <details open class="slider">
                 <summary>Мои навыки</summary>
                 <div class="wrap-flex">
-                <h3 class="heading3">1С Предприятие</h3>
-                <ul>
-                    <li><a href="img/spec.jpg" target="_blank" alt="Специалист по платформе 1C">Специалист по платформе 1C</a></li>
-                    <li><a href="img/prof.jpg" target="_blank" alt="Профессионал по 1С Бухгалтерия">Профессионал по 1С Бухгалтерия</a></li>
-                    <li>Опыт работы с ЗУП 2.5, 3.0</li>
-                    <li>Опыт работы с Управление Торговлей</li>
-                    <li>Обновление платформы и нетиповых конфигураций</li>
-                </ul>
-                <h3 class="heading3">Программирование</h3>
-                <ul>
-                    <li>Язык SQL</li>
-                    <li>HTML, CSS</li>
-                    <li>JavaScript</li>
-                    <li>JAVA</li>
-                    <li>Android Studio</li>
-                    <li>Python</li>
-                </ul>
+                    <h3 class="heading3">Программирование</h3>
+                    <ul>
+                        <li>HTML, CSS</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Фреймворк AngularJS</li>
+                        <li>Библиотека jQuery</li>
+                        <li>JAVA</li>
+                        <li>Android Studio</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>C#</li>
+                        <li>.Net Core</li>
+                    </ul>
+                    <ul>
+                        <li>Английский язык уровня Advanced</li>
+                        <li>Опыт работы с Git</li>
+                    </ul>
+                    <!--  <h3class="heading3">1С Предприятие</h3>
+                    <ul>
+                        <li><a href="img/spec.jpg" target="_blank" alt="Специалист по платформе 1C">Специалист по платформе 1C</a></li>
+                        <li><a href="img/prof.jpg" target="_blank" alt="Профессионал по 1С Бухгалтерия">Профессионал по 1С Бухгалтерия</a></li>
+                        <li>Опыт работы с ЗУП 2.5, 3.0</li>
+                        <li>Опыт работы с Управление Торговлей</li>
+                        <li>Обновление платформы и нетиповых конфигураций</li>
+                    </ul> -->
                 </div>
             </details>
         </section>
@@ -68,18 +79,20 @@
                 <summary>Обучение</summary>
                 <h3 class="heading3">Программирование</h3>
                 <ul>
+                    <!-- TO-DO: добавить ссылки на курсы -->
                     <li>htmlacademy - Интенсивный онлайн‑курс Профессиональный HTML и CSS</li>
                     <li>htmlacademy - Интенсивный онлайн‑курс. Профессиональный JavaScript. Уровень 1</li>
                     <li>Udemy - Введение в программирование на Java за 1 месяц</li>
                     <li>OTUS - Java для начинающих программистов</li>
                     <li>alishev - Продвинутая Java</li>
                     <li>alishev - Android для начинающих</li>
-                    <li>Itproger - Курс по Изучение Java и библиотек java, UI дизайн и андроид разработка</li>
-                    <li>Нетология - Основы Agile Метод Scrum для веб-разработки</li>
+                    <li>ItProger - Курс по Изучение Java и библиотек java, UI дизайн и андроид разработка</li>
+                    <li>Нетология - Основы Agile. Метод Scrum для веб-разработки</li>
                     <li>loftbooks.ru - Система контроля версий Git</li>
                     <li>Udemy - Python Bible. Все, что вам нужно для программирования на Python</li>
+                    <li>OTUS - Подготовительный JS</li>
                 </ul>
-                <h3 class="heading3">1С Предприятие</h3>
+                <!-- <h3 class="heading3">1С Предприятие</h3>
                 <ul>
                     <li><a href="img/dorabotka.pdf" target="_blank" alt="Доработка и адаптация типовых конфигураций">курсы-по-1с.рф - Доработка и адаптация типовых конфигураций УТ 11.4 (11.3), КА 2.4 (2.2) и 1С:ERP 2.4 (2.2)</a></li>
                     <li><a href="img/extends.pdf" target="_blank" alt="Разработка расширений и технологии доработки конфигураций">курсы-по-1с.рф - Разработка расширений и технологии доработки конфигураций 1С без снятия с поддержки</a></li>
@@ -88,7 +101,7 @@
                     <li><a href="img/kurs-spec.pdf" target="_blank" alt="Подготовка к Аттестации 1С:Специалист по платформе">курсы-по-1с.рф - Подготовка к Аттестации 1С:Специалист по платформе 1С:Предприятие 8.3</a></li>
                     <li>Павел Чистов - СпецКурс</li>
                     <li>Белоусов - Подготовка к экзамену 1С:Специалист по платформе</li>
-                </ul>
+                </ul> -->
                 <h3 class="heading3">Высшее образование</h3>
                 <ul>
                     <li>2015 г. Специальность "Управление инновационными проектами", ГУУ (Москва)</li>
@@ -113,7 +126,17 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-label="Период">март 2018 - наст.вр.</td>
+                            <td data-label="Период">апрель 2021 - наст.вр.</td>
+                            <td data-label="Должность">разработчик</td>
+                            <td data-label="Организация">ООО "КОРЕ ПАРТНЕРС"</td>
+                            <td data-label="Обязанности">
+                                <ul>
+                                    <li>Написание нового кода и доработка существующего</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Период">март 2018 - апрель 2021</td>
                             <td data-label="Должность">программист 1С</td>
                             <td data-label="Организация">ООО "Белый остров"</td>
                             <td data-label="Обязанности">
@@ -137,7 +160,8 @@
                                     <li>расчет бонусов и премиальных начислений</li>
                                 </ul>
                             </td>
-                        </tr>                    <tr>
+                        </tr>                    
+                        <tr>
                             <td data-label="Период">май 2013 - август 2015</td>
                             <td data-label="Должность">бухгалтер</td>
                             <td data-label="Организация">ООО "Белый остров"</td>
@@ -163,24 +187,20 @@
                     <ul class="link-icons">
                         <li><a href="tel:+79023955543">
                             <div class="sm-icon mobile-number"></div>
-                            <p>+7(902) 395-55-43</p>
+                            <div>+7(902) 395-55-43</div>
                         </a></li>
                         <li><a href="mailto:mariakw@ya.ru">
                             <div class="sm-icon email"></div>
-                            <p>mariakw@ya.ru</p>
+                            <div>mariakw@ya.ru</div>
                         </a></li>
                         <li><a href="https://github.com/MariaKw?tab=repositories" target="_blank">
                             <div class="sm-icon github"></div>
-                            <p>репозиторий на GitHub</p>
+                            <div>репозиторий на GitHub</div>
                         </a></li>
                     </ul>
-
-                    <!--<p class="call-me-p link-icons">
-                        <button id="call-me-btn" class="call-me-btn">
-                            <div class="sm-icon mobile-number"></div>
-                            Перезвоните мне
-                        </button>
-                    </p>-->
+                    <div class="call-me-btn link-icons">
+                        <a href="#"><span>Перезвоните мне</span></a>
+                    </div>
                 </div>
             </details>
         </section>
@@ -221,6 +241,6 @@
         </div>
 
         <script type="text/javascript" src="js/start.js"></script>
-        <script type="text/javascript" src="js/dragdrop.js"></script>
+        <script type="text/javascript" src="js/daynight.js"></script>
     </body>
 </html>

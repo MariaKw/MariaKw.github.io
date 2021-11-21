@@ -1,0 +1,385 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  color: #212122;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 500px;
+}
+.hidden {
+  display: none;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+.main-wrapper a, .main-wrapper a:visited {
+  color: #212122;
+}
+.nav-above ul li, 
+.my-links ul li, 
+.my-contacts ul li,
+.page-footer ul li {
+  list-style-type: none;
+  margin: 0 5px;
+}
+
+/* Хедер и футер */
+.page-header, .page-footer {
+  font-family: 'Anonymous Pro', monospace;
+  color: #f9f9f9;
+  background-color: #2d2c3e;
+  font-size: 25px;
+  padding: 10px;
+}
+.page-header .nav-above ul,
+.page-footer .link-icons ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.page-header a,
+.page-footer a {
+  display: block;
+  padding: 5px 10px;
+  margin: 0;
+}
+.page-header a:hover,
+.page-footer a:hover {
+  border-radius: 35px;
+  box-shadow: 1px 1px 5px 5px #ebebee;
+  background-color: #ebebee;
+  color: #2d2c3e;
+  font-weight: bold;
+}
+.link-icons div {
+  display: inline-block;
+  vertical-align: middle;
+  align-content: center;
+}
+.white-icon{
+  filter: invert(1);
+}
+.white-icon:hover{
+  filter: invert(0);
+}
+
+/* Хэдер */
+.page-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  /*position: fixed;
+  top: 0;
+  width: 100%;*/
+}
+@media (max-width: 850px) {
+  .page-header {
+    font-size: 20px;
+    padding-right: 25px;
+  }
+  .page-header .nav-above ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .page-header a {
+    padding: 2px 8px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Футер */
+.page-footer .link-icons {
+  display: inline-block;
+  text-align: center;
+}
+.page-footer .link-icons a {
+  padding: 25px;
+}
+.made-by {
+  text-align: right;
+  font-size: 20px;
+  margin: 5px;
+}
+.made-by a {
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 2px;
+}
+
+/* Основные секции в теле */
+.main-wrapper {
+  background-color: #ebebee;
+  border: 1px solid #dfdfe2;
+  margin: 10px auto;
+  padding: 20px;
+  text-align:left;
+  max-width:960px;
+}
+section {
+  border: 1px dotted #7c7c80;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+section:hover {
+  background-color: #d7d7da;
+}
+summary {
+  font-family: 'Anonymous Pro', monospace;
+  border-bottom: solid 2px #212122;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Секция Обо мне */
+.general {
+  display: flex;
+  font-family: 'Anonymous Pro', monospace;
+}
+.my-foto {
+  border: 2px solid #212122;
+  border-radius: 10px;
+  box-shadow: #454546;
+  min-width: 200px;
+  object-fit: cover;
+}
+.about-me {
+  margin: 0 20px;
+}
+
+/* Секция Мои навыки */
+.wrap-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Секция Опыт работы */
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+table, th, td {
+  border: 1px solid #212122;
+  border-spacing: 0px 0px;
+}
+td, th {
+  padding: 3px 8px;
+}
+td ul {
+  margin: 0;
+  padding: 0 8px 0 15px;
+  font-size: 15px;
+}
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .container table thead {
+    display: none;
+  }
+  .container table tr {
+    display: block;
+  }
+  .container table td {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .container table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  .wrap-flex {
+  	flex-direction: column;
+  }
+}
+
+/* Секция Контакты */
+.my-contacts ul {
+  padding: 0;
+}
+.my-contacts ul li a {
+  font-size: 22px;
+  margin: 15px 0;
+  border-radius: 7px;
+}
+.my-contacts ul li a:hover {
+  background-color: #ebebee;
+}
+.my-contacts ul:first-child {
+  margin-top: 0;
+}
+.my-contacts h2 {
+  margin-bottom: 0;
+}
+
+/* Кнопка Перезвоните мне */
+.call-me-btn {
+  position: relative;
+	z-index: 1;
+	margin: 10px;
+  font-size: 1.5em;
+  font-family: 'Anonymous Pro', monospace;
+  max-width: 250px;
+}
+.call-me-btn span {
+  position: relative;
+	z-index: 1;
+	font-size: 1em;
+	color: #fdfcf3;
+}
+.call-me-btn span:hover {
+  color: #182037 !important;
+  font-weight: bold;
+}
+.call-me-btn a {
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #182037;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.3s all;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #fdfcf3;
+}
+.call-me-btn a:hover {
+  background-color: #fdfcf3;
+  box-shadow: 1px 1px 5px 5px #fdfcf3;
+  border-radius: 5px;
+  color: #182037;
+}
+.call-me-btn a::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 450%;
+  background-color: #fdfcf3;
+  transition: 1s;
+  animation: animate 2s linear infinite;
+}
+.call-me-btn a:hover::before {
+  width: 120%;
+}
+.call-me-btn a::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #182037;
+  transition: 0.4s;
+}
+.call-me-btn a:hover::after {
+  background-color: #fdfcf3;
+}
+@keyframes animate {
+  0% {
+  	transform: rotate(0deg);
+  }
+  100% {
+  	transform: rotate(360deg);
+  }
+}
+
+/* Попап Перезвоните мне */
+.popup-call-me {
+  text-align:left;
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 200px;
+  padding: 10px 25px;
+  background-color: #212122;
+  color: #f9f9f9;
+  border: 5px inset #ffffff;
+  border-radius: 15px;
+  min-font-size: 20px;
+  margin: 40px auto;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  bottom: 30%;
+}
+.popup-call-me .modal-close {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px;
+  top: 5px;
+  right: 5px;
+}
+.popup-call-me .modal-action {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  padding: 7px;
+  border: 2px solid #09040d;
+  border-radius: 15px;
+  font-size: 20px;
+  font-family: inherit;
+}
+.popup-call-me input, .popup-call-me textarea {
+  font-family: inherit;
+  font-size: 18px;
+  padding: 4px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Иконки в хэдере, футере и секции Мои контакты */
+.sm-icon {
+  display: block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+  background-size: 23px 23px;
+  text-indent: -100000px;
+}
+.page-footer .sm-icon {
+  width: 40px;
+  height: 40px;
+  background-size: 40px 40px;
+}
+.sm-icon.mobile-number {
+  background-image: url(../icons/icon-phone.png);
+}
+.sm-icon.email {
+  background-image: url(../icons/icon-mail.png);
+}
+.sm-icon.github {
+  background-image: url(../icons/icon-git.png);
+}
+
+/* Ночная тема */
+.night { 
+	filter: invert(100%);
+}
+body.night { 
+	background-color: #212122 !important;
+}
