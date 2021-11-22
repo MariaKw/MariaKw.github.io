@@ -9,7 +9,7 @@ html {
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  color: #212122;
+  color: #2d2c3e;
   background-color: #f9f9f9;
   text-align: center;
   margin: 0 auto;
@@ -21,11 +21,11 @@ body {
 }
 a, a:visited {
   text-decoration: none;
-  color: #f9f9f9;
+  color: #fdfcf3;
   cursor: pointer;
 }
 .main-wrapper a, .main-wrapper a:visited {
-  color: #212122;
+  color: #2d2c3e;
 }
 .nav-above ul li, 
 .my-links ul li, 
@@ -34,13 +34,17 @@ a, a:visited {
   list-style-type: none;
   margin: 0 5px;
 }
+.backlight:hover {
+  background-color: #fdfcf3;
+  box-shadow: 1px 1px 5px 4px #fdfcf3;
+}
 
 /* Хедер и футер */
 .page-header, .page-footer {
   font-family: 'Anonymous Pro', monospace;
-  color: #f9f9f9;
+  color: #fdfcf3;
   background-color: #2d2c3e;
-  font-size: 25px;
+  font-size: 23px;
   padding: 10px;
 }
 .page-header .nav-above ul,
@@ -55,14 +59,14 @@ a, a:visited {
 .page-header a,
 .page-footer a {
   display: block;
-  padding: 5px 10px;
+  padding: 4px 10px;
   margin: 0;
 }
 .page-header a:hover,
 .page-footer a:hover {
-  border-radius: 35px;
-  box-shadow: 1px 1px 5px 5px #ebebee;
-  background-color: #ebebee;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #fdfcf3;
+  background-color: #fdfcf3;
   color: #2d2c3e;
   font-weight: bold;
 }
@@ -112,6 +116,7 @@ a, a:visited {
 .page-footer .link-icons a {
   padding: 25px;
 }
+
 .made-by {
   text-align: right;
   font-size: 20px;
@@ -122,6 +127,9 @@ a, a:visited {
   font-weight: bold;
   text-decoration: underline;
   padding: 2px;
+}
+.page-footer .link-icons a:hover {
+  border-radius: 45px;
 }
 
 /* Основные секции в теле */
@@ -218,22 +226,22 @@ td ul {
 }
 
 /* Секция Контакты */
+.my-contacts {
+  font-size: 22px;
+}
 .my-contacts ul {
   padding: 0;
-}
-.my-contacts ul li a {
-  font-size: 22px;
-  margin: 15px 0;
-  border-radius: 7px;
-}
-.my-contacts ul li a:hover {
-  background-color: #ebebee;
 }
 .my-contacts ul:first-child {
   margin-top: 0;
 }
-.my-contacts h2 {
-  margin-bottom: 0;
+.my-contacts ul li {
+  margin: 15px 0;
+}
+.my-contacts ul li a:hover {
+  background-color: #fdfcf3;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 5px #fdfcf3;
 }
 
 /* Кнопка Перезвоните мне */
@@ -241,7 +249,6 @@ td ul {
   position: relative;
 	z-index: 1;
 	margin: 10px;
-  font-size: 1.5em;
   font-family: 'Anonymous Pro', monospace;
   max-width: 250px;
 }
@@ -252,8 +259,11 @@ td ul {
 	color: #fdfcf3;
 }
 .call-me-btn span:hover {
-  color: #182037 !important;
+  color: #2d2c3e;
   font-weight: bold;
+}
+.call-me-btn a:hover {
+  color: #2d2c3e;
 }
 .call-me-btn a {
   position: relative;
@@ -261,18 +271,10 @@ td ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #182037;
+  background-color: #2d2c3e;
   text-decoration: none;
   overflow: hidden;
   transition: 0.3s all;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px 5px #fdfcf3;
-}
-.call-me-btn a:hover {
-  background-color: #fdfcf3;
-  box-shadow: 1px 1px 5px 5px #fdfcf3;
-  border-radius: 5px;
-  color: #182037;
 }
 .call-me-btn a::before {
   content: "";
@@ -290,7 +292,7 @@ td ul {
   content: "";
   position: absolute;
   inset: 4px;
-  background: #182037;
+  background: #2d2c3e;
   transition: 0.4s;
 }
 .call-me-btn a:hover::after {
@@ -307,16 +309,15 @@ td ul {
 
 /* Попап Перезвоните мне */
 .popup-call-me {
-  text-align:left;
+  text-align: left;
   min-width: 300px;
   max-width: 400px;
   min-height: 200px;
   padding: 10px 25px;
-  background-color: #212122;
-  color: #f9f9f9;
-  border: 5px inset #ffffff;
-  border-radius: 15px;
-  min-font-size: 20px;
+  background-color: #2d2c3e;
+  color: #fdfcf3;
+  border: 5px inset #fdfcf3;
+  border-radius: 5px;
   margin: 40px auto;
   position: sticky;
   z-index: 9999;
@@ -326,11 +327,11 @@ td ul {
 .popup-call-me .modal-close {
   display: block;
   position: absolute;
-  font-size: 20px;
   font-weight: 700;
   border-radius: 15px;
   top: 5px;
   right: 5px;
+  cursor: pointer;
 }
 .popup-call-me .modal-action {
   display: block;
@@ -338,16 +339,18 @@ td ul {
   margin: 10px auto;
   padding: 7px;
   border: 2px solid #09040d;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 20px;
-  font-family: inherit;
+  cursor: pointer;
 }
-.popup-call-me input, .popup-call-me textarea {
+.popup-call-me input, 
+.popup-call-me textarea {
   font-family: inherit;
   font-size: 18px;
   padding: 4px;
   margin-bottom: 10px;
   width: 100%;
+  border-radius: 5px;
 }
 
 /* Иконки в хэдере, футере и секции Мои контакты */
@@ -381,5 +384,5 @@ td ul {
 	filter: invert(100%);
 }
 body.night { 
-	background-color: #212122 !important;
+	background-color: #2d2c3e !important;
 }
